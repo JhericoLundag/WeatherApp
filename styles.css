@@ -16,40 +16,69 @@ form {
     margin-bottom: 20px;
 }
 
-#cityInput {
+#cityInput, #cityInput1, #cityInput2 {
     padding: 10px;
     font-size: 16px;
+
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #4caf50;
+    background-image: linear-gradient(to right, rgba(102, 123, 198, 0), rgba(102, 123, 198, 1));
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-image: linear-gradient(to right, rgba(218, 114, 151, 0), rgba(218, 114, 151, 1));
 }
-
 #weather {
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 300px;
+    border: 3px solid #FDFFD2;
+    border-radius: 50px;
+    width: 10%;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, rgba(102, 123, 198, 0), rgba(102, 123, 198, 1));
 }
 
-h2 {
+
+#weather1, #weather2 {
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid #FDFFD2;
+    border-radius: 50px;
+    width: 90%; /* Adjusted to full width */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(102, 123, 198, 0), rgba(102, 123, 198, 1));
+}
+
+#weather1 h2, #weather2 h2 {
     margin: 0;
     font-size: 1.5em;
+    color: #26355D;
 }
 
-p {
-    margin: 5px 0;
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between items */
+}
+
+.forecast-item {
+    border-radius: 50px;
+    width: 300px;
+    border: 2px solid #FDFFD2;
+    padding: 10px;
+    margin: 10px;
+    color: #26355D;
+    text-align: center; /* Center align text content */
 }
